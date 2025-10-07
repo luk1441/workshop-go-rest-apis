@@ -46,16 +46,8 @@ go version
 
 Expected output (example):
 ```
-go version go1.23.0 windows/amd64
+go version go1.25.1 windows/amd64
 ```
-
-Check your environment setup:
-
-```bash
-go env
-```
-
-This shows details like `GOPATH`, `GOROOT`, and module configuration.
 
 ---
 
@@ -87,29 +79,23 @@ This shows details like `GOPATH`, `GOROOT`, and module configuration.
 1. Open **Visual Studio Code**.
 2. Go to **Extensions** (`Ctrl+Shift+X` on Windows/Linux, `Cmd+Shift+X` on macOS).
 3. Search for **Go** and install the extension published by the **Go Team at Google**.
-4. After installation, VS Code may prompt you to install extra tools like:
-   - `gopls` (language server)
-   - `dlv` (debugger)
-   - formatting/linting tools  
-   Confirm and install them for full functionality.
 
 ---
+## 5. Downloading GitHub Project
 
-## 5. Verify the Setup in VS Code
+1. Go to the [GitHub repository](https://github.com/luk1441/workshop-go-rest-apis).
+2. Click the green **Code** button.
+3. Select **Download ZIP**.
+4. Extract the ZIP file to your desired location.
+5. Open VS Code, go to **File → Open Folder**, and choose the extracted folder.
+---
 
-1. In your existing project folder, use the provided [hello_world.go](./hello_world/hello_world.go) file or create it if not already present:
 
-   ```go
-   package main
+## 6. Verify the Setup in VS Code
 
-   import "fmt"
+1. Right-click the folder [hello_world](./hello_world) and select **Open in Integrated Terminal**.
 
-   func main() {
-       fmt.Println("hello world")
-   }
-   ```
-
-2. Run it in the integrated terminal:
+2. Run in the integrated terminal:
 
    ```bash
    go run hello_world.go
@@ -122,4 +108,4 @@ This shows details like `GOPATH`, `GOROOT`, and module configuration.
 
 ---
 
-✅ Your Go development environment is now fully set up on **Windows, macOS, or Linux**!
+Your Go development environment is now fully set up on **Windows, macOS, or Linux**!
