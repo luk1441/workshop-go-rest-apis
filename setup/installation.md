@@ -1,6 +1,10 @@
 # Setup Guide: Go with Visual Studio Code
 
-This guide explains how to install **Go**, set up **Visual Studio Code (VS Code)**, and configure the **Go extension** on **Windows, macOS, and Linux**.
+This guide explains how to install **Go**, set up **Visual Studio Code (VS Code)**, and configure the **Go extension** on **Windows, macOS, and Linux**. 
+
+If the installation fails or you encounter any issues during the process, feel free to contact us via email:
+   - luk1441: lmayer5@stud.hs-heilbronn.de
+   - wulfzilla: abdelhamid@stud.hs-heilbronn.de
 
 ---
 
@@ -108,4 +112,4 @@ go version go1.25.1 windows/amd64
 
 ---
 
-Your Go development environment is now fully set up on **Windows, macOS, or Linux**!
+Your Go development environment is now fully set up on **Windows, macOS, or Linux**. See you in the workshop!
