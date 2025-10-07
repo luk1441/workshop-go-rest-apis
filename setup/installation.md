@@ -7,12 +7,12 @@ This guide explains how to install **Go**, set up **Visual Studio Code (VS Code)
 ## 1. Install Go
 
 ### Windows
-1. Download the Windows installer from [https://go.dev/dl/](https://go.dev/dl/).
+1. Download the Windows installer from <a href="https://go.dev/dl/" target="_blank" rel="noopener noreferrer">https://go.dev/dl/</a>.
 2. Run the `.msi` installer and follow the setup wizard.
 3. By default, Go will be installed in `C:\Go` and the installer will update your `PATH` automatically.
 
 ### macOS
-1. Download the `.pkg` installer for macOS from [https://go.dev/dl/](https://go.dev/dl/).
+1. Download the `.pkg` installer for macOS from <a href="https://go.dev/dl/" target="_blank" rel="noopener noreferrer">https://go.dev/dl/</a>.
 2. Run the installer and follow the instructions.
 3. Alternatively, you can install via **Homebrew**:
    ```bash
@@ -20,7 +20,7 @@ This guide explains how to install **Go**, set up **Visual Studio Code (VS Code)
    ```
 
 ### Linux
-1. Download the appropriate `.tar.gz` archive from [https://go.dev/dl/](https://go.dev/dl/).
+1. Download the appropriate `.tar.gz` archive from <a href="https://go.dev/dl/" target="_blank" rel="noopener noreferrer">https://go.dev/dl/</a>.
 2. Extract it to `/usr/local` (requires sudo):
    ```bash
    sudo tar -C /usr/local -xzf goX.X.X.linux-amd64.tar.gz
@@ -54,7 +54,7 @@ go version go1.25.1 windows/amd64
 ## 3. Install Visual Studio Code
 
 ### Windows / macOS / Linux
-1. Download VS Code from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+1. Download VS Code from <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/</a>.
 2. Install it by running the installer (Windows/macOS) or by extracting/installing the package (Linux).
 
 #### Linux package managers:
@@ -83,7 +83,7 @@ go version go1.25.1 windows/amd64
 ---
 ## 5. Downloading GitHub Project
 
-1. Go to the [GitHub repository](https://github.com/luk1441/workshop-go-rest-apis).
+1. Go to the <a href="https://github.com/luk1441/workshop-go-rest-apis/" target="_blank" rel="noopener noreferrer">Github repository</a>.
 2. Click the green **Code** button.
 3. Select **Download ZIP**.
 4. Extract the ZIP file to your desired location.
@@ -108,4 +108,4 @@ go version go1.25.1 windows/amd64
 
 ---
 
-Your Go development environment is now fully set up on **Windows, macOS, or Linux**!
+Your Go development environment is now fully set up on **Windows, macOS, or Linux**. See you at the workshop!
