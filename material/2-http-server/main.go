@@ -10,7 +10,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	const port = "8080"
+
 	http.HandleFunc("/", handler)
 
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Server listening on port " + port)
+	http.ListenAndServe(":"+port, nil)
 }

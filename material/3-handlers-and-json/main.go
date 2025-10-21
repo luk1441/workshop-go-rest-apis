@@ -26,10 +26,9 @@ func main() {
 	const port = "8080"
 	http.HandleFunc("/encode", encodeHandler)
 
-	fmt.Printf("Server running at http://localhost:%v", port)
-
+	fmt.Println("Server listening on port " + port)
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
-		fmt.Printf("Server stopped: %v", err)
+		fmt.Println("Server shut down")
 	}
 }
