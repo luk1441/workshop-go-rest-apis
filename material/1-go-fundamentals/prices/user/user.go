@@ -14,3 +14,8 @@ func New(id int, name string) User {
 func (u User) Display() {
 	fmt.Println(u.Name)
 }
+
+// exercise 1
+func (u *User) ClearName() {
+	u.Name = ""
+}

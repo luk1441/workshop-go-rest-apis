@@ -32,6 +32,28 @@ func createUser(name string) User {
 	return newUser
 }
 
+// exercise 4
+func DeleteUser(id int) bool {
+	for i, u := range users {
+		if u.Id == id {
+			users = append(users[:i], users[i+1:]...)
+			return true
+		}
+	}
+	return false
+}
+
+// exercise 4
+func UpdateUser(id int, newName string) (User, bool) {
+	for i, u := range users {
+		if u.Id == id {
+			users[i].Name = newName
+			return users[i], true
+		}
+	}
+	return User{}, false
+}
+
 func main() {
 	fmt.Println("All users:", getUsers())
 

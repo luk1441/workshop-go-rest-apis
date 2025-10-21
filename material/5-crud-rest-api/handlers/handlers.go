@@ -11,9 +11,10 @@ import (
 
 func UsersHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-
-	nameFilter := r.URL.Query().Get("name")
 	users := models.GetUsers()
+
+	// exercise 5
+	nameFilter := r.URL.Query().Get("name")
 	var filteredUsers []models.User
 
 	if nameFilter == "" {
