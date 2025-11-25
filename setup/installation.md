@@ -78,11 +78,12 @@ go version go1.25.1 windows/amd64
 
 ---
 
-## 4. Install the Go Extension in VS Code
+## 4. Install the Go Extension and REST client in VS Code
 
 1. Open **Visual Studio Code**.
 2. Go to **Extensions** (`Ctrl+Shift+X` on Windows/Linux, `Cmd+Shift+X` on macOS).
 3. Search for **Go** and install the extension published by the **Go Team at Google**.
+4. Search for **REST client** and install the extension published by **Huachao Mao**.
 
 ---
 ## 5. Downloading GitHub Project
