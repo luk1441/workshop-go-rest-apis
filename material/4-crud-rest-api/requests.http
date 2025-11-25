@@ -1,0 +1,27 @@
+### Get users
+GET http://localhost:8080/users
+
+### Create user
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+
+### Get user by userId
+GET http://localhost:8080/user/1
+
+### Delete user by userId
+DELETE http://localhost:8080/user/1
+
+### Exercise 4
+### Update user by userId
+PUT http://localhost:8080/user/1
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
