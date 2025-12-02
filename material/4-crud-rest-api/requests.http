@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
   "name": "John Doe",
-  "email": "john.doe@example.com"
+  "age": 22
 }
 
 ### Get user by userId
@@ -23,5 +23,5 @@ Content-Type: application/json
 
 {
   "name": "Jane Doe",
-  "email": "jane.doe@example.com"
+  "age": 22
 }
