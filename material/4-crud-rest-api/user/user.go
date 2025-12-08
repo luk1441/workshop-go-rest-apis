@@ -1,10 +1,5 @@
 package user
 
-import (
-	"errors"
-	"fmt"
-)
-
 type User struct {
 	Id   int    `json:"id"`
 	Name string `json:"name"`
@@ -25,45 +20,44 @@ func GetUsers() []User {
 	return users
 }
 
-func GetUser(Id int) (User, error) {
+func GetUser(Id int) User {
 	for _, u := range users {
 		if u.Id == Id {
-			return u, nil
+			return u
 		}
 	}
-	return User{}, fmt.Errorf("User %d not found", Id)
+	return User{}
 }
 
-func CreateUser(input UserInput) (User, error) {
+func CreateUser(input UserInput) User {
 	newID := len(users)
 	newUser := User{Id: newID, Name: input.Name, Age: input.Age}
 	if input.Name == "" {
-		return User{}, errors.New("User couldnt be created")
+		return User{}
 	}
 	users = append(users, newUser)
-	return newUser, nil
+	return newUser
 }
 
-func DeleteUser(id int) error {
+func DeleteUser(id int) {
 	for i, u := range users {
 		if u.Id == id {
 			users = append(users[:i], users[i+1:]...)
-			return nil
+			return
 		}
 	}
-	return fmt.Errorf("User %d not found", id)
 }
 
-func UpdateUser(user User) (User, error) {
+func UpdateUser(user User) User {
 	for i, u := range users {
 		if u.Id == user.Id {
 			if user.Name == "" && user.Age <= 0 {
-				return User{}, fmt.Errorf("User %d couldnt be updated", user.Id)
+				return User{}
 			}
 			users[i].Name = user.Name
 			users[i].Age = user.Age
-			return users[i], nil
+			return users[i]
 		}
 	}
-	return User{}, fmt.Errorf("User %d not found", user.Id)
+	return User{}
 }
